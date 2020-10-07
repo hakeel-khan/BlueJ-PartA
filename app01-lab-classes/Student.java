@@ -87,7 +87,7 @@ public class Student
     {
         this.course = newCourse;
     }
-      
+      //here we can print the details out
     /**
      * Print the student's name and ID number to the output terminal.
      */
