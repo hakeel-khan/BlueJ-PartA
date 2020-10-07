@@ -1,0 +1,37 @@
+Lab class Tuesday 29th sept 2020)
+Instructor: Nicholas Day   Room: G100
+Class list:
+Jay Dave, student ID: 12345678, credits: 0
+David May, student ID: 123345687, credits: 0
+James May, student ID: 12345876, credits: 0
+Number of students: 3
+Jay.addCredits(20);
+David.addCredits(20);
+James.addCredits(20);
+Co452Lab.printList();
+Lab class Tuesday 29th sept 2020)
+Instructor: Nicholas Day   Room: G100
+Class list:
+Jay Dave, student ID: 12345678, credits: 20
+David May, student ID: 123345687, credits: 20
+James May, student ID: 12345876, credits: 20
+Number of students: 3
+Jay.changeName("Jay Khan");
+Co452Lab.printList();
+Lab class Tuesday 29th sept 2020)
+Instructor: Nicholas Day   Room: G100
+Class list:
+Jay Khan, student ID: 12345678, credits: 20
+David May, student ID: 123345687, credits: 20
+James May, student ID: 12345876, credits: 20
+Number of students: 3
+David.changeName("David May");
+James.changeName("James Khan");
+Co452Lab.printList();
+Lab class Tuesday 29th sept 2020)
+Instructor: Nicholas Day   Room: G100
+Class list:
+Jay Khan, student ID: 12345678, credits: 20
+David May, student ID: 123345687, credits: 20
+James Khan, student ID: 12345876, credits: 20
+Number of students: 3
