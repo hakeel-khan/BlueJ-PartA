@@ -1,0 +1,10 @@
+Student mike = new Student("Mike Johnson", "M20J");
+Course compCourse = new Course("CO452", "Computing");
+mike.addCourse(compCourse);
+mike.getName()
+    returned String "Mike Johnson"
+mike.print();
+Mike Johnson, student ID: M20J, credits: 0
+Course:
+code number - CO452
+title - Computing

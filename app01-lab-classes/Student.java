@@ -85,7 +85,7 @@ public class Student
     //here we can add a new course for this student 
     public void addCourse(Course newCourse)
     {
-        course = newCourse;
+        this.course = newCourse;
     }
       
     /**
@@ -94,8 +94,12 @@ public class Student
     public void print()
     {
         System.out.println(name + ", student ID: " + id + ", credits: " + credits);
-        System.out.println(course.getCodeNumber());
-        System.out.println(course.getTitle());
+        
+        String courseCodeNumber = course.getCodeNumber();
+        System.out.println("Course:");
+        System.out.println("code number - "+courseCodeNumber);
+        String courseTitle = course.getTitle();
+        System.out.println("title - " + courseTitle);
         
     }
 }

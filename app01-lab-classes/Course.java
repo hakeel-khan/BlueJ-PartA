@@ -17,18 +17,18 @@ public class Course
      */
     public Course(String codeNumber, String title)
     {
-        codeNumber = codeNumber; 
-        title = title;
+        this.codeNumber = codeNumber; 
+        this.title = title;
     }
 //getting the value of the codenumber
     public String getCodeNumber()
     {
-        return codeNumber;
+        return this.codeNumber;
     }
 //getting the value of the title
     public String getTitle()
     {
-        return title;
+        return this.title;
     }
 }
 
