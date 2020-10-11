@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Hakeel Khan
  */
 public class TicketMachine
 {
@@ -42,10 +42,17 @@ public class TicketMachine
      * Return The amount of money already inserted for the
      * next ticket.
      */
-    public int getBalance()
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public int sampleMethod(int y)
     {
-        return balance;
-    }
+        // put your code here
+        return y;
+}
 
     /**
      * Receive an amount of money from a customer.
