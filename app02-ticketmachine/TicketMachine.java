@@ -79,10 +79,11 @@ public class TicketMachine
      * Check that the amount is sensible.
      */
     public void insertMoney(int amount)
-    {
-        if(amount > 0) 
-        {
+     
+    {if(this.selectedTicket !=null)
+        { if (amount > 0){
             balance = balance + amount;
+            System.out.println("Inserted" + amount + "cents.");
             printTicket();
         }
         else 
@@ -90,10 +91,14 @@ public class TicketMachine
             System.out.println("Use a positive amount rather than: " +
                                amount);
         }
-        
+    }
+    else
+    {
+    
+        System.out.println("Please select a ticket before insert more coins!");
         
     }
-
+}
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
@@ -140,6 +145,7 @@ public class TicketMachine
         int amountToRefund;
         amountToRefund = balance;
         balance = 0;
+        System.out.println("Total collected: "+ this.total);
         System.out.println("Refunded balance: "+ amountToRefund);
         return amountToRefund;
     }
@@ -149,6 +155,7 @@ public class TicketMachine
         System.out.println("1. Aylesbury costing £2.20");
         System.out.println("2. Amersham costing £3.00");
         System.out.println("3. High Wycombe costing £3.30");
+        System.out.println("Inserted amount:" + getBalance());
         System.out.println("Please, select one of the tickets!");
         
     }
