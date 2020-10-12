@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Hakeel Khan
+ * Modified by Student Name
  */
 public class TicketMachine
 {
@@ -19,17 +19,44 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
-
+    // Selected ticket by the user
+    private Ticket selectedTicket;
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine(int insertedCoins)
     {
-        price = cost;
-        balance = 0;
+        printAllAvailableTickets();
+        price = 0;
+        balance = insertedCoins;
         total = 0;
     }
 
+    /**
+       */
+    public void selectTicket(String destination)
+    {
+        if(destination == "high wycombe")
+        {
+           this.selectedTicket = new Ticket(destination, "12/10/2020"); 
+           this.price = this.selectedTicket.getCost(); 
+        }
+        else if(destination == "aylesbury")
+        {
+           this.selectedTicket = new Ticket(destination, "12/10/2020"); 
+           this.price = this.selectedTicket.getCost();
+        }
+        else if(destination == "amersham")
+        {
+           this.selectedTicket = new Ticket(destination, "12/10/2020"); 
+           this.price = this.selectedTicket.getCost();
+        }
+        else
+        {
+            System.out.println("Invalid ticket destination!");
+        }
+    }
+    
     /**
      * @Return The price of a ticket.
      */
@@ -42,17 +69,10 @@ public class TicketMachine
      * Return The amount of money already inserted for the
      * next ticket.
      */
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public int getBalance()
     {
-        // put your code here
-        return y;
-}
+        return balance;
+    }
 
     /**
      * Receive an amount of money from a customer.
@@ -63,12 +83,15 @@ public class TicketMachine
         if(amount > 0) 
         {
             balance = balance + amount;
+            printTicket();
         }
         else 
         {
             System.out.println("Use a positive amount rather than: " +
                                amount);
         }
+        
+        
     }
 
     /**
@@ -78,27 +101,34 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) 
+        if(balance >= this.price) 
         {
+            String destination = this.selectedTicket.getDestination();
+            String date = this.selectedTicket.getDatePurchased();
             // Simulate the printing of a ticket.
             System.out.println("##################");
-            System.out.println("# The BlueJ Line");
+            System.out.println("# " + destination);
             System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            System.out.println("# " + this.price + " cents.");
+            System.out.println("# " + date);
             System.out.println("##################");
             System.out.println();
 
             // Update the total collected with the price.
-            total = total + price;
+            total = total + this.price;
             // Reduce the balance by the price.
-            balance = balance - price;
+            balance = balance - this.price;
+            
+            refundBalance();
         }
         else 
         {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+                               (this.price - balance) + " more cents.");
                     
         }
+    
+     
     }
 
     /**
@@ -110,6 +140,16 @@ public class TicketMachine
         int amountToRefund;
         amountToRefund = balance;
         balance = 0;
+        System.out.println("Refunded balance: "+ amountToRefund);
         return amountToRefund;
+    }
+    
+    private void printAllAvailableTickets()
+    {
+        System.out.println("1. Aylesbury costing £2.20");
+        System.out.println("2. Amersham costing £3.00");
+        System.out.println("3. High Wycombe costing £3.30");
+        System.out.println("Please, select one of the tickets!");
+        
     }
 }

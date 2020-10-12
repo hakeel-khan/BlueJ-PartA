@@ -1,0 +1,76 @@
+TicketMachine Aylesbury = new TicketMachine(220);
+Aylesbury.getPrice()
+    returned int 220
+TicketMachine Aylesbury = new TicketMachine(220);
+TicketMachine Amersham = new TicketMachine(300);
+TicketMachine aylesbury = new TicketMachine(220);
+TicketMachine amersham = new TicketMachine(300);
+TicketMachine highWycombe = new TicketMachine(330);
+Ticket ticket1 = new Ticket();
+TicketMachine luton = new TicketMachine(200);
+luton.printTicket();
+You must insert at least: 200 more cents.
+TicketMachine aylesbury = new TicketMachine(220);
+aylesbury.printTicket();
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+TicketMachine aylesbury = new TicketMachine(220);
+aylesbury.printTicket();
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+TicketMachine aylesbury = new TicketMachine(220);
+aylesbury.printTicket();
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+TicketMachine aylesbury = new TicketMachine(220);
+aylesbury.printTicket();
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+aylesbury.printTicket();
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+You must insert at least: 220 more cents.
+TicketMachine aylesbury = new TicketMachine(220);
+aylesbury.printTicket();
+You must insert at least: 220 more cents.
+TicketMachine aylesbury = new TicketMachine(220);
+aylesbury.getBalance()
+    returned int 0
+aylesbury.insertMoney(1500);
+aylesbury.printTicket();
+##################
+aylesbury
+# Ticket
+# 220 cents.
+##################
+
+TicketMachine aylesbury = new TicketMachine(220);
+TicketMachine amersham = new TicketMachine(300);
+TicketMachine highWycombe = new TicketMachine(330);
+aylesbury.insertMoney(100);
+aylesbury.insertMoney(1000);
+amersham.insertMoney(400);
+highWycombe.insertMoney(600);
+aylesbury.printTicket();
+##################
+aylesbury
+# Ticket
+# 220 cents.
+##################
+
+##################
+amersham
+# Ticket
+# 300 cents.
+##################
+
+##################
+highWycombe
+# Ticket
+# 330 cents.
+##################
+

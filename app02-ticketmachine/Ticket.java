@@ -37,7 +37,7 @@ public class Ticket
        {
            this.cost = 300;
        }
-       if(this.destination == "highWycombe")
+       if(this.destination == "high wycombe")
        {
            this.cost = 330;
        }
