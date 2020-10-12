@@ -22,7 +22,7 @@ public class TicketMachine
     // Selected ticket by the user
     private Ticket selectedTicket;
     /**
-     * Create a machine that issues tickets of the given price.
+     * here we have a ticket machine contructor.
      */
     public TicketMachine(int insertedCoins)
     {
@@ -32,7 +32,7 @@ public class TicketMachine
         total = 0;
     }
 
-    /**
+    /** in this method the user can choose his destination
        */
     public void selectTicket(String destination)
     {
@@ -75,8 +75,7 @@ public class TicketMachine
     }
 
     /**
-     * Receive an amount of money from a customer.
-     * Check that the amount is sensible.
+     * here the user will have to insert the amount of money which needs to be inserted
      */
     public void insertMoney(int amount)
      
@@ -100,9 +99,7 @@ public class TicketMachine
     }
 }
     /**
-     * Print a ticket if enough money has been inserted, and
-     * reduce the current balance by the ticket price. Print
-     * an error message if more money is required.
+     * Here it prints out the destination cost and the date purchased
      */
     public void printTicket()
     {
@@ -137,8 +134,7 @@ public class TicketMachine
     }
 
     /**
-     * Return the money in the balance.
-     * The balance is cleared.
+     * here it refunds the balance
      */
     public int refundBalance()
     {
@@ -150,6 +146,9 @@ public class TicketMachine
         return amountToRefund;
     }
     
+    /**
+     * here it prints out all the available ticket 
+     */
     private void printAllAvailableTickets()
     {
         System.out.println("1. Aylesbury costing £2.20");

@@ -27,6 +27,9 @@ public class Ticket
         setCost();
     }
     
+    /**
+     * here we have the destination and adding the cost for eachd destination
+     */
     private void setCost()
     {
        if(this.destination == "aylesbury")

@@ -8,15 +8,17 @@
 public class Coins
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    
+ 
     /**
      * Constructor for objects of class Coins
      */
-    public Coins()
+    public Coins();
     {
         // initialise instance variables
-        x = 0;
+        
+        
+        
     }
 
     /**
