@@ -1,0 +1,32 @@
+TicketMachine ticketMa1 = new TicketMachine(100);
+1. Aylesbury costing £2.20
+2. Amersham costing £3.00
+3. High Wycombe costing £3.30
+Inserted amount:0
+Please, select one of the tickets!
+ticketMa1.getBalance()
+    returned int 100
+ticketMa1.getPrice()
+    returned int 0
+ticketMa1.selectTicket("Aylesbury");
+Invalid ticket destination!
+ticketMa1.selectTicket("aylesbury");
+ticketMa1.getPrice()
+    returned int 220
+ticketMa1.insertMoney(Coin.P10.getValue());
+Inserted10cents.
+You must insert at least: 110 more cents.
+ticketMa1.insertMoney(Coin.P100.getValue());
+Inserted100cents.
+You must insert at least: 10 more cents.
+ticketMa1.insertMoney(Coin.P10.getValue());
+Inserted10cents.
+##################
+# aylesbury
+# Ticket
+# 220 cents.
+# 12/10/2020
+##################
+
+Total collected: 220
+Refunded balance: 0

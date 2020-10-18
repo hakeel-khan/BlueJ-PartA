@@ -9,7 +9,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Hakeel Khan
  */
 public class TicketMachine
 {
@@ -21,6 +21,8 @@ public class TicketMachine
     private int total;
     // Selected ticket by the user
     private Ticket selectedTicket;
+    // inserting coin
+    private Coin coin;
     /**
      * here we have a ticket machine contructor.
      */
@@ -29,34 +31,34 @@ public class TicketMachine
         printAllAvailableTickets();
         price = 0;
         balance = insertedCoins;
-        total = 0;
+        total = 0; 
     }
 
     /** in this method the user can choose his destination
-       */
+     */
     public void selectTicket(String destination)
     {
         if(destination == "high wycombe")
         {
-           this.selectedTicket = new Ticket(destination, "12/10/2020"); 
-           this.price = this.selectedTicket.getCost(); 
+            this.selectedTicket = new Ticket(destination, "12/10/2020"); 
+            this.price = this.selectedTicket.getCost(); 
         }
         else if(destination == "aylesbury")
         {
-           this.selectedTicket = new Ticket(destination, "12/10/2020"); 
-           this.price = this.selectedTicket.getCost();
+            this.selectedTicket = new Ticket(destination, "12/10/2020"); 
+            this.price = this.selectedTicket.getCost();
         }
         else if(destination == "amersham")
         {
-           this.selectedTicket = new Ticket(destination, "12/10/2020"); 
-           this.price = this.selectedTicket.getCost();
+            this.selectedTicket = new Ticket(destination, "12/10/2020"); 
+            this.price = this.selectedTicket.getCost();
         }
         else
         {
             System.out.println("Invalid ticket destination!");
         }
     }
-    
+
     /**
      * @Return The price of a ticket.
      */
@@ -78,26 +80,27 @@ public class TicketMachine
      * here the user will have to insert the amount of money which needs to be inserted
      */
     public void insertMoney(int amount)
-     
+
     {if(this.selectedTicket !=null)
         { if (amount > 0){
-            balance = balance + amount;
-            System.out.println("Inserted" + amount + "cents.");
-            printTicket();
+                balance = balance + amount;
+                System.out.println("Inserted" + amount + "cents.");
+                printTicket();
+            }
+            else 
+            {
+                System.out.println("Use a positive amount rather than: " +
+                    amount);
+            }
         }
-        else 
+        else
         {
-            System.out.println("Use a positive amount rather than: " +
-                               amount);
+
+            System.out.println("Please select a ticket before insert more coins!");
+
         }
     }
-    else
-    {
-    
-        System.out.println("Please select a ticket before insert more coins!");
-        
-    }
-}
+
     /**
      * Here it prints out the destination cost and the date purchased
      */
@@ -120,19 +123,17 @@ public class TicketMachine
             total = total + this.price;
             // Reduce the balance by the price.
             balance = balance - this.price;
-            
+
             refundBalance();
         }
         else 
         {
             System.out.println("You must insert at least: " +
-                               (this.price - balance) + " more cents.");
-                    
-        }
-    
-     
-    }
+                (this.price - balance) + " more cents.");
 
+        }
+
+    }
     /**
      * here it refunds the balance
      */
@@ -145,7 +146,7 @@ public class TicketMachine
         System.out.println("Refunded balance: "+ amountToRefund);
         return amountToRefund;
     }
-    
+
     /**
      * here it prints out all the available ticket 
      */
@@ -156,6 +157,6 @@ public class TicketMachine
         System.out.println("3. High Wycombe costing £3.30");
         System.out.println("Inserted amount:" + getBalance());
         System.out.println("Please, select one of the tickets!");
-        
+
     }
 }
