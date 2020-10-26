@@ -1,0 +1,17 @@
+Course course1 = new Course("Web Development", "CO456");
+Course course2 = new Course("Programming Concepts", "CO452");
+Course course3 = new Course("Computer Architectures", "CO459");
+course3.print();
+Course Computer Architectures - CO459
+course1.print();
+Course Web Development - CO456
+course2.print();
+Course Programming Concepts - CO452
+Module module1 = new Module("Computer Architectures", "CO450");
+module1.print();
+Module: CO450 Computer Architectures Mark = -1
+percentage will be the same as the original mark
+module1.awardMark(34);
+module1.print();
+Module: CO450 Computer Architectures Mark = 34
+percentage will be the same as the original mark

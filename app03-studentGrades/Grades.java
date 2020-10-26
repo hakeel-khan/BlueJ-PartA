@@ -2,8 +2,8 @@
 /**
  * Enumeration class Grades - write a description of the enum class here
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author (Hakeel Khan)
+ * @version (26/10/20)
  */
 public enum Grades
 {

@@ -1,20 +1,22 @@
 
 /**
- * Write a description of class Module here.
+ * Here we have the module class and it has three classes which is title,
+ * code number and mark
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Hakeel Khan)
+ * @version (26/10/2020)
  */
 public class Module
 {
+    //here we have the title class
     private String title;
-    
+    // here we have the code number class
     private String codeNo;
-    
+    // here have the mark class
     private int mark;
     
     /**
-     * Constructor for objects of class Module
+     * Here is the constuctor for the module class
      */
     public Module(String title, String codeNo)
     {
@@ -23,16 +25,25 @@ public class Module
         this.codeNo = codeNo;
     }
     
+    /**
+     * Here we have the getTitle method. 
+     */
     public String getTitle()
     {
         return this.title;
     }
     
+    /**
+     * Here we have the getcodeNo method.
+     */
     public String getcodeNo()
     {
         return this.codeNo;
     }
     
+    /**
+     * here is the getMark method.
+     */
     public int getMark()
     {
         if(this.mark == -1)
@@ -42,6 +53,9 @@ public class Module
         return this.mark;
     }
         
+    /**
+     * here we have the awardMark method.
+     */
     public void awardMark(int mark)
     {
         if((mark >= 0) && (mark <= 100))
@@ -53,7 +67,10 @@ public class Module
             System.out.print("Invalid mark!!!");
         }
     }   
- 
+    
+    /**
+     * Here we have the printing method.
+     */
     public void print()
     {
         System.out.println("Module: " + codeNo +
