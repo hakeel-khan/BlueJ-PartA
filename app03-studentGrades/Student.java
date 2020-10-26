@@ -45,7 +45,7 @@ public class Student
     }
 
     /**
-     * Return the student ID of this student.
+     * Return the student ID of  this student.
      */
     public String getStudentID()
     {

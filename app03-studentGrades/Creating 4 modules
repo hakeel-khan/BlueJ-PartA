@@ -1,0 +1,9 @@
+Course course1 = new Course("Web Development", "CO456");
+Course course2 = new Course("Programming Concepts", "CO452");
+Course course3 = new Course("Computer Architectures", "CO459");
+course3.print();
+Course Computer Architectures - CO459
+course1.print();
+Course Web Development - CO456
+course2.print();
+Course Programming Concepts - CO452

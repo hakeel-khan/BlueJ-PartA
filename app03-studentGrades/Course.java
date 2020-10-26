@@ -31,6 +31,9 @@ public class Course
         this.title = title;
         
         module1 = new Module("Programming Concepts", "CO452");
+        module2 = new Module("Computer Architecture", "CO450");
+        module3 = new Module("Application Programming", "CO453");
+        module4 = new Module("Web Development", "CO456");
         //todo add the others
     }
 
@@ -39,6 +42,18 @@ public class Course
         if(moduleNo == 1)
         {
             module1.awardMark(mark);
+        }
+        if(moduleNo == 2)
+        {
+            module2.awardMark(mark);
+        }
+        if(moduleNo == 3)
+        {
+            module3.awardMark(mark);
+        }
+        if(moduleNo == 4)
+        {
+            module4.awardMark(mark);
         }
     }
     

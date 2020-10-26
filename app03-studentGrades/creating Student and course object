@@ -1,0 +1,13 @@
+Student student1 = new Student("hakeel", "1234");
+student1.getLoginName()
+    returned String "hake123"
+student1.getName()
+    returned String "hakeel"
+student1.changeName("james");
+student1.print();
+james, student ID: 1234, credits: 0
+Course course1 = new Course("C0452", "computing");
+course1.print();
+Course C0452 - computing
+course1.print();
+Course C0452 - computing
