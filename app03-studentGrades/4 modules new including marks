@@ -1,0 +1,98 @@
+Course course1 = new Course("Programming Concepts", "CO452");
+course1.awardMark(52, 1);
+course1.calculateGrade();
+course1.print();
+Course Programming Concepts - CO452
+Module: CO452 Programming Concepts Mark = 52
+percentage will be the same as the original mark
+Module: CO450 Computer Architecture Mark = -1
+percentage will be the same as the original mark
+Module: CO453 Application Programming Mark = -1
+percentage will be the same as the original mark
+Module: CO456 Web Development Mark = -1
+percentage will be the same as the original mark
+course1.calculateFinalMark();
+ no mark for this module!
+ no mark for this module!
+ no mark for this module!
+Course course2 = new Course("Computer Architecture", "CO450");
+Course course3 = new Course("Application Programming", "CO453");
+Course course4 = new Course("Web Development", "CO456");
+course2.awardMark(67, 2);
+course3.awardMark(32, 3);
+course4.awardMark(87, 4);
+course3.print();
+Course Application Programming - CO453
+Module: CO452 Programming Concepts Mark = -1
+percentage will be the same as the original mark
+Module: CO450 Computer Architecture Mark = -1
+percentage will be the same as the original mark
+Module: CO453 Application Programming Mark = 32
+percentage will be the same as the original mark
+Module: CO456 Web Development Mark = -1
+percentage will be the same as the original mark
+Module module1 = new Module("Programming Concepts", "CO452");
+module1.awardMark(65);
+module1.getMark()
+    returned int 65
+module1.getTitle()
+    returned String "Programming Concepts"
+module1.print();
+Module: CO452 Programming Concepts Mark = 65
+percentage will be the same as the original mark
+course2.calculateGrade();
+course2.print();
+Course Computer Architecture - CO450
+Module: CO452 Programming Concepts Mark = -1
+percentage will be the same as the original mark
+Module: CO450 Computer Architecture Mark = 67
+percentage will be the same as the original mark
+Module: CO453 Application Programming Mark = -1
+percentage will be the same as the original mark
+Module: CO456 Web Development Mark = -1
+percentage will be the same as the original mark
+Module module1 = new Module("Programming Concepts", "CO452");
+module1.awardMark(67);
+module1.getcodeNo()
+    returned String "CO452"
+module1.print();
+Module: CO452 Programming Concepts Mark = 67
+percentage will be the same as the original mark
+Module module2 = new Module("Computer Architecture", "CO450");
+Module module3 = new Module("Application Programming", "CO453");
+Module module4 = new Module("Web Development", "CO456");
+module2.awardMark(32);
+module3.awardMark(54);
+module4.awardMark(67);
+Course course1 = new Course("co654", "Software Engineering");
+course1.print();
+Course co654 - Software Engineering
+Gradenull
+Module: CO452 Programming Concepts Mark = -1
+percentage will be the same as the original mark
+Module: CO450 Computer Architecture Mark = -1
+percentage will be the same as the original mark
+Module: CO453 Application Programming Mark = -1
+percentage will be the same as the original mark
+Module: CO456 Web Development Mark = -1
+percentage will be the same as the original mark
+Module module1 = new Module("Programming Concepts", "CO452");
+Module module2 = new Module("Computer Architecture", "CO450");
+Module module3 = new Module("Application Programming", "CO453");
+Module module4 = new Module("Web Development", "CO456");
+module1.awardMark(43);
+module2.awardMark(56);
+module3.awardMark(23);
+module4.awardMark(87);
+module1.print();
+Module: CO452 Programming Concepts Mark = 43
+percentage will be the same as the original mark
+module2.print();
+Module: CO450 Computer Architecture Mark = 56
+percentage will be the same as the original mark
+module3.print();
+Module: CO453 Application Programming Mark = 23
+percentage will be the same as the original mark
+module4.print();
+Module: CO456 Web Development Mark = 87
+percentage will be the same as the original mark

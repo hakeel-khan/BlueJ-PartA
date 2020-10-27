@@ -14,15 +14,18 @@ public class Module
     private String codeNo;
     // here have the mark class
     private int mark;
+    // here we have created a boolean
+    private boolean completed;
     
     /**
      * Here is the constuctor for the module class
      */
     public Module(String title, String codeNo)
     {
-        mark = -1;
+        mark = 0;
         this.title = title;
         this.codeNo = codeNo;
+        completed = false;
     }
     
     /**
@@ -61,6 +64,7 @@ public class Module
         if((mark >= 0) && (mark <= 100))
         {
             this.mark = mark;
+            if (mark > 40) completed = true;
         }
         else
         {
