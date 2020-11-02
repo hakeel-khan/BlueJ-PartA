@@ -1,0 +1,9 @@
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+manager.printStocklist();
+Stock List
+==========
+
+100: IPad stock level: 0
+101: Iphone stock level: 0
+102: I Mac stock level: 0

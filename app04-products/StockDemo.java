@@ -5,6 +5,8 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version 2016.02.29
+ * Modified By Hakeel Khan  
+ * Date Accessed 02/11/2020
  */
 public class StockDemo
 {
@@ -15,12 +17,13 @@ public class StockDemo
      * Create a StockManager and populate it with a few
      * sample products.
      */
-    public StockDemo()
+    public StockDemo(StockManager manager)
     {
-        manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        this.manager = manager;
+        
+        manager.addProduct(new Product(100, "IPad"));
+        manager.addProduct(new Product(101,  "Iphone"));
+        manager.addProduct(new Product(102,  "I Mac"));
     }
     
     /**
