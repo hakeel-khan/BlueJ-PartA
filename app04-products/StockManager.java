@@ -4,8 +4,8 @@
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Hakeel Khan) 
+ * @version (03/11/20)
  */
 public class StockManager
 {
@@ -18,6 +18,7 @@ public class StockManager
     public StockManager()
     {
         stock = new ArrayList<>();
+        
     }
 
     /**
@@ -38,9 +39,49 @@ public class StockManager
     public void delivery(int id, int amount)
     {
         Product product = findProduct(id);
+        if (product != null)
+        {
         product.increaseQuantity(amount);
+        System.out.println("Product Delivered : " + product); 
+        }
+        else
+        {
+            System.out.println("Product" + id + "cannot be found!");
+        } 
     }
     
+        /**
+     * Show details of the given product. If found,
+     * its name and stock quantity will be shown.
+     * @param id The ID of the product to look for.
+     */
+    public void printDetails(int id)
+    {
+        Product product = findProduct(id);
+        
+        if(product != null) 
+        {
+            System.out.println(product.toString());
+        }
+    }
+    
+        /**
+     * Sell one of the given item.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int id)
+    {
+        Product product = findProduct(id);
+        
+        if(product != null) 
+        {
+            printDetails(id);
+            product.sellOne();
+            printDetails(id);
+        }
+    }
+     
     /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
@@ -73,8 +114,12 @@ public class StockManager
     /**
      * Print details of all the products.
      */
-    public void printProductDetails()
+    public void printAllProducts()
     {
+     for(Product product : stock)
+     {
+         System.out.println(product);  
+     }
     }
     
     public void printStocklist()

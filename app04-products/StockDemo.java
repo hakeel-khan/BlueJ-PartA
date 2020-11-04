@@ -21,9 +21,17 @@ public class StockDemo
     {
         this.manager = manager;
         
-        manager.addProduct(new Product(100, "IPad"));
-        manager.addProduct(new Product(101,  "Iphone"));
+        manager.addProduct(new Product(100,  "IPad"));
+        manager.addProduct(new Product(101,  "Iphone X"));
         manager.addProduct(new Product(102,  "I Mac"));
+        manager.addProduct(new Product(103,  "Samsung Galaxy S10"));
+        manager.addProduct(new Product(104,  "Samsung Fold"));
+        manager.addProduct(new Product(105,  "I Phone 7"));
+        manager.addProduct(new Product(106,  "I phone 6"));
+        manager.addProduct(new Product(107,  "Nokia"));
+        manager.addProduct(new Product(108,  "Samsung Galaxy S9"));
+        manager.addProduct(new Product(109,  "Samsung Galaxy S7"));
+        manager.addProduct(new Product(110,  "Samsung Galaxy S6"));
     }
     
     /**
@@ -34,42 +42,10 @@ public class StockDemo
     public void demo()
     {
         // Show details of all of the products.
-        manager.printProductDetails();
+        manager.printAllProducts();
         // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
-        manager.printProductDetails();
-    }
-    
-    /**
-     * Show details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
-     */
-    public void showDetails(int id)
-    {
-        Product product = getProduct(id);
-        
-        if(product != null) 
-        {
-            System.out.println(product.toString());
-        }
-    }
-    
-    /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
-     */
-    public void sellProduct(int id)
-    {
-        Product product = getProduct(id);
-        
-        if(product != null) 
-        {
-            showDetails(id);
-            product.sellOne();
-            showDetails(id);
-        }
+        manager.delivery(104, 5);
+        manager.printAllProducts();
     }
     
     /**
