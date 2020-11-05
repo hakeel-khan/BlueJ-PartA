@@ -33,6 +33,7 @@ public class StockDemo
         manager.addProduct(new Product(109,  "Samsung Galaxy S7"));
         manager.addProduct(new Product(110,  "Samsung Galaxy S6"));
     }
+    
     /**
      * this should runn all the tests which it is needed for the demo
      */
@@ -40,6 +41,8 @@ public class StockDemo
     {
         manager.printAllProducts();
         demoDeliverProducts();
+        manager.printAllProducts();
+        demoSellProducts();
         manager.printAllProducts();
     }
     
@@ -55,27 +58,26 @@ public class StockDemo
        for(int id = 100; id < 110; id++) 
        {
            quantity++;
-           manager.deliverProduct(id, quantity);
+           manager.deliverProducts(id, quantity);
        } 
     }
     
-    /**
-     * Get the product with the given id from the manager.
-     * An error message is printed if there is no match.
-     * @param id The ID of the product.
-     * @return The Product, or null if no matching one is found.
+        /**
+     * Provide a very simple demonstration of how a StockManager
+     * might be used. Details of one product are shown, the
+     * product is restocked, and then the details are shown again.
      */
-    public Product getProduct(int id)
+    private void demoSellProducts()
     {
-        Product product = manager.findProduct(id);
+        int quantity = 0;
         
-        if(product == null) 
-        {
-            System.out.println("Product with ID: " + id +
-                               " is not recognised.");
-        }
-        return product;
+       for(int id = 100; id < 110; id++) 
+       {
+           quantity++;
+           manager.sellProduct(id, quantity);
+       } 
     }
+   
 
     /**
      * @return The stock manager.
