@@ -33,19 +33,30 @@ public class StockDemo
         manager.addProduct(new Product(109,  "Samsung Galaxy S7"));
         manager.addProduct(new Product(110,  "Samsung Galaxy S6"));
     }
+    /**
+     * this should runn all the tests which it is needed for the demo
+     */
+    public void runDemo()
+    {
+        manager.printAllProducts();
+        demoDeliverProducts();
+        manager.printAllProducts();
+    }
     
     /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    private void demoDeliverProducts()
     {
-        // Show details of all of the products.
-        manager.printAllProducts();
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(104, 5);
-        manager.printAllProducts();
+        int quantity = 0;
+        
+       for(int id = 100; id < 110; id++) 
+       {
+           quantity++;
+           manager.deliverProduct(id, quantity);
+       } 
     }
     
     /**
