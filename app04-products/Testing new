@@ -1,0 +1,38 @@
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+manager.printStocklist();
+Stock List
+==========
+
+100: IPad stock level: 0
+101: Iphone X stock level: 0
+102: I Mac stock level: 0
+103: Samsung Galaxy S10 stock level: 0
+104: Samsung Fold stock level: 0
+105: I Phone 7 stock level: 0
+106: I phone 6 stock level: 0
+107: Nokia stock level: 0
+108: Samsung Galaxy S9 stock level: 0
+109: Samsung Galaxy S7 stock level: 0
+110: Samsung Galaxy S6 stock level: 0
+manager.deliverProduct(103, 6);
+Product Delivered : 103: Samsung Galaxy S10 stock level: 6
+manager.sellProduct(104 , 2);
+104: Samsung Fold stock level: 0
+Attempt to sell an out of stock item: Samsung Fold
+104: Samsung Fold stock level: 0
+manager.sellProduct(103, 2);
+103: Samsung Galaxy S10 stock level: 6
+103: Samsung Galaxy S10 stock level: 3
+manager.printAllProducts();
+100: IPad stock level: 0
+101: Iphone X stock level: 0
+102: I Mac stock level: 0
+103: Samsung Galaxy S10 stock level: 3
+104: Samsung Fold stock level: 0
+105: I Phone 7 stock level: 0
+106: I phone 6 stock level: 0
+107: Nokia stock level: 0
+108: Samsung Galaxy S9 stock level: 0
+109: Samsung Galaxy S7 stock level: 0
+110: Samsung Galaxy S6 stock level: 0

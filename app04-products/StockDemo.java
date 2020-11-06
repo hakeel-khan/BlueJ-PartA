@@ -58,7 +58,7 @@ public class StockDemo
        for(int id = 100; id < 110; id++) 
        {
            quantity++;
-           manager.deliverProducts(id, quantity);
+           manager.deliverProduct(id, quantity);
        } 
     }
     
