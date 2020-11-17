@@ -13,7 +13,7 @@ public class StockManager
     private ArrayList<Product> stock;
 
     /**
-     * Initialise the stock manager.
+     * here we have a stockmanager and it includes a array list
      */
     public StockManager()
     {
@@ -22,8 +22,7 @@ public class StockManager
     }
 
     /**
-     * Add a product to the list.
-     * @param item The item to be added.
+     * here we have a method which can add a product
      */
     public void addProduct(Product item)
     {
@@ -31,10 +30,9 @@ public class StockManager
     }
     
     /**
-     * Receive a delivery of a particular product.
-     * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
-     * @param amount The amount to increase the quantity by.
+     * here on the deliver product we will deliver the product, but at 
+     * first we will have to find the product
+     * 
      */
     public void deliverProduct(int id, int amount)
     {
@@ -51,10 +49,8 @@ public class StockManager
         } 
     }
     
-         /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
+      /**
+     * here we are selling the product. 
      */
     public void sellProduct(int id, int quantity)
     {
@@ -76,10 +72,8 @@ public class StockManager
         }
     }
     
-        /**
-     * Show details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
+     /**
+     * here we will print the details of the product.
      */
     public void printDetails(int id)
     {
@@ -92,9 +86,7 @@ public class StockManager
     }
     
     /**
-     * Try to find a product in the stock with the given id.
-     * @return The identified product, or null if there is none
-     *         with a matching ID.
+     * here we are finding the product
      */
     public Product findProduct(int id)
     {
@@ -109,21 +101,58 @@ public class StockManager
     }
     
     /**
-     * Locate a product with the given ID, and return how
-     * many of this item are in stock. If the ID does not
-     * match any product, return zero.
-     * @param id The ID of the product.
-     * @return The quantity of the given product in stock.
+     * renaming a product. 
      */
-    public int numberInStock(int id)
+    public void changeProductName(int id, String replacement)
     {
-        return 0;
+        Product product = findProduct(id);
+        if(product != null)
+        {
+            product.setName(replacement);
+        }
+        else
+        {
+            System.out.println("The product is not found on the database");
+        }
     }
     
-     /**
-     * Print details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
+    /**
+     * here we are finding the product by its name
+     */
+    public Product findByName(String productName)
+    {
+        for (Product product : stock)
+        {
+            if (product.getName().contains(productName))
+            {
+                System.out.println("Product found: " + product);
+            }
+            else 
+            {
+                System.out.println("Product name not found.");
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * here we have the numberinStock.
+     */
+    public void numberInStock(int id)
+    {
+       Product product = findProduct(id);
+       if (product.getQuantity() > 0)
+       {
+            System.out.println("Stock remaining: " + product.getQuantity());
+       }
+       else 
+       {
+            System.out.println("There is no stock remaining.");
+       }
+    }
+    
+    /**
+     * here we are printing the product
      */
     public void printProduct(int id)
     {
@@ -146,6 +175,9 @@ public class StockManager
      }
     }
     
+    /**
+     * here we are printing the stocklist
+     */
     public void printStocklist()
     {
        printHeading();
@@ -155,6 +187,9 @@ public class StockManager
         }
     }
     
+    /**
+     * here we are printing the heading
+     */
     public void printHeading()
     {
         System.out.println("Stock List");

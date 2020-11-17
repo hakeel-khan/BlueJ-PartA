@@ -47,9 +47,7 @@ public class StockDemo
     }
     
     /**
-     * Provide a very simple demonstration of how a StockManager
-     * might be used. Details of one product are shown, the
-     * product is restocked, and then the details are shown again.
+     * here we have the Deliver which will deliver the products
      */
     private void demoDeliverProducts()
     {
@@ -62,10 +60,8 @@ public class StockDemo
        } 
     }
     
-        /**
-     * Provide a very simple demonstration of how a StockManager
-     * might be used. Details of one product are shown, the
-     * product is restocked, and then the details are shown again.
+     /**
+     * here we have the demo sell products which will sell the products
      */
     private void demoSellProducts()
     {
@@ -80,7 +76,7 @@ public class StockDemo
    
 
     /**
-     * @return The stock manager.
+     * here it will return the stockmanager to the stock manager
      */
     public StockManager getManager()
     {

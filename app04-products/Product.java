@@ -29,7 +29,7 @@ public class Product
     }
 
     /**
-     * @return The product's id.
+     * here we are returning the id
      */
     public int getID()
     {
@@ -37,7 +37,7 @@ public class Product
     }
 
     /**
-     * @return The product's name.
+     * here it will return the name
      */
     public String getName()
     {
@@ -45,7 +45,7 @@ public class Product
     }
 
     /**
-     * @return The quantity in stock.
+     * here it will return the name.
      */
     public int getQuantity()
     {
@@ -59,12 +59,17 @@ public class Product
     {
         return id + ": " +  name + " stock level: " + quantity;
     }
+    
+    /**
+     * setter method for the setname
+     */
+    public void setName(String name)
+    {
+        this.name = name;
+    }
 
     /**
-     * Restock with the given amount of this product.
-     * The current quantity is incremented by the given amount.
-     * @param amount The number of new items added to the stock.
-     *               This must be greater than zero.
+     * here it will deliver the amount of products which will be delivered.
      */
     public void deliver(int amount)
     {
@@ -80,8 +85,7 @@ public class Product
     }
 
     /**
-     * Sell one of these products.
-     * An error is reported if there appears to be no stock.
+     * Selling one of the products
      */
     public void sellOne()
     {
