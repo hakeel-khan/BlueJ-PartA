@@ -2,8 +2,8 @@
 /**
  * Write a description of class Program here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Hakeel Khan)
+ * @version (18/11/2020)
  */
 public class Program
 {
@@ -13,7 +13,7 @@ public class Program
      * This class creates and runs an instance of
      * the StockApp class
      */
-    public static void main()
+    public static void runMain()
     {
         app = new StockApp();
         app.run();
