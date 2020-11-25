@@ -28,6 +28,7 @@ public class StockApp
         input = new InputReader();
         manager = new StockManager();
         demo = new StockDemo(manager);
+        
     }
 
     /**
@@ -95,6 +96,13 @@ public class StockApp
         
         int id = Integer.parseInt(number);
         manager.removeProduct(id);
+    }
+    
+    public void deliverProduct(int id, int amount)
+    {
+        Product product = findProduct(id);
+        
+    
     }
    
     /**

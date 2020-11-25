@@ -117,6 +117,7 @@ public class StockManager
               return product;  
             }
         }
+        System.out.println("Cannot find the product");
         return null;
     }
     
