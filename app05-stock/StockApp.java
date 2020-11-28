@@ -32,7 +32,7 @@ public class StockApp
     }
 
     /**
-     * 
+     * here we will run the Menu
      */
     public void run()
     {
@@ -77,6 +77,9 @@ public class StockApp
         }
     }
 
+    /**
+     * here is the add product method.
+     */
     public void addProduct()
     {
         System.out.println("add a product");
@@ -92,6 +95,9 @@ public class StockApp
         nextID++;
     }
 
+    /**
+     * here is the remove product method
+     */
     public void removeProduct()
     {
         System.out.println("Remove an old product");
@@ -104,6 +110,9 @@ public class StockApp
         manager.removeProduct(id);
     }
 
+    /**
+     * here is the deliver product method
+     */
     public void deliverProduct()
     {
         System.out.println("Deliver a quantity of product");
@@ -139,6 +148,9 @@ public class StockApp
         System.out.println();        
     }
 
+    /**
+     * here is the print all products method.
+     */
     public void printAllProducts()
     {
         manager.printAllProducts();

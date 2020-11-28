@@ -1,0 +1,199 @@
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> add 
+******************************
+ Stock Management Application 
+    App05: by Hakeel Khan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> add
+add a product
+
+ Enter the name of the product
+> samsung galaxy s10
+you have added this111: samsung galaxy s10 stock level: 0
+add a product
+
+ Enter the name of the product
+> samsung galaxy s20 
+you have added this112: samsung galaxy s20  stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Hakeel Khan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> print all
+******************************
+ Stock Management Application 
+    App05: by Hakeel Khan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> printall
+
+Hakeel's stock list
+====================
+
+100: IPad stock level: 0
+101: Iphone X stock level: 0
+102: I Mac stock level: 0
+103: Samsung Galaxy S10 stock level: 0
+104: Samsung Fold stock level: 0
+105: I Phone 7 stock level: 0
+106: I phone 6 stock level: 0
+107: Nokia stock level: 0
+108: Samsung Galaxy S9 stock level: 0
+109: Samsung Galaxy S7 stock level: 0
+110: Samsung Galaxy S6 stock level: 0
+111: samsung galaxy s10 stock level: 0
+112: samsung galaxy s20  stock level: 0
+
+
+Hakeel's stock list
+====================
+
+100: IPad stock level: 0
+101: Iphone X stock level: 0
+102: I Mac stock level: 0
+103: Samsung Galaxy S10 stock level: 0
+104: Samsung Fold stock level: 0
+105: I Phone 7 stock level: 0
+106: I phone 6 stock level: 0
+107: Nokia stock level: 0
+108: Samsung Galaxy S9 stock level: 0
+109: Samsung Galaxy S7 stock level: 0
+110: Samsung Galaxy S6 stock level: 0
+111: samsung galaxy s10 stock level: 0
+112: samsung galaxy s20  stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Hakeel Khan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> add
+add a product
+
+ Enter the name of the product
+> apple iphone 11
+you have added this113: apple iphone 11 stock level: 0
+add a product
+
+ Enter the name of the product
+> apple iphone 12
+you have added this114: apple iphone 12 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Hakeel Khan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> add
+add a product
+
+ Enter the name of the product
+> motorola g9 pluss
+you have added this115: motorola g9 pluss stock level: 0
+add a product
+
+ Enter the name of the product
+> samsung 23
+you have added this116: samsung 23 stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Hakeel Khan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> printall
+
+Hakeel's stock list
+====================
+
+100: IPad stock level: 0
+101: Iphone X stock level: 0
+102: I Mac stock level: 0
+103: Samsung Galaxy S10 stock level: 0
+104: Samsung Fold stock level: 0
+105: I Phone 7 stock level: 0
+106: I phone 6 stock level: 0
+107: Nokia stock level: 0
+108: Samsung Galaxy S9 stock level: 0
+109: Samsung Galaxy S7 stock level: 0
+110: Samsung Galaxy S6 stock level: 0
+111: samsung galaxy s10 stock level: 0
+112: samsung galaxy s20  stock level: 0
+113: apple iphone 11 stock level: 0
+114: apple iphone 12 stock level: 0
+115: motorola g9 pluss stock level: 0
+116: samsung 23 stock level: 0
+
+
+Hakeel's stock list
+====================
+
+100: IPad stock level: 0
+101: Iphone X stock level: 0
+102: I Mac stock level: 0
+103: Samsung Galaxy S10 stock level: 0
+104: Samsung Fold stock level: 0
+105: I Phone 7 stock level: 0
+106: I phone 6 stock level: 0
+107: Nokia stock level: 0
+108: Samsung Galaxy S9 stock level: 0
+109: Samsung Galaxy S7 stock level: 0
+110: Samsung Galaxy S6 stock level: 0
+111: samsung galaxy s10 stock level: 0
+112: samsung galaxy s20  stock level: 0
+113: apple iphone 11 stock level: 0
+114: apple iphone 12 stock level: 0
+115: motorola g9 pluss stock level: 0
+116: samsung 23 stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Hakeel Khan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Deliver:    Deliver the product
+
+> quit
