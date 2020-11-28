@@ -1,4 +1,3 @@
-
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -9,17 +8,18 @@
  */
 public class StockApp
 {
+
     public final int FIRST_ID = 111;
-    
+
     // Use to get user input
     private InputReader input;
-    
+
     private StockManager manager;
-    
+
     private StockDemo demo;
-    
+
     private int nextID = FIRST_ID;
-    
+
     /**
      * Constructor for objects of class StockApp
      */
@@ -28,7 +28,7 @@ public class StockApp
         input = new InputReader();
         manager = new StockManager();
         demo = new StockDemo(manager);
-        
+
     }
 
     /**
@@ -37,21 +37,23 @@ public class StockApp
     public void run()
     {
         boolean finished = false;
-        
+
         while(!finished)
         {
             printHeading();
             printMenuChoices();
-           
+
             String choice = input.getInput();
             choice = choice.toLowerCase();
-            
+
             executeMenuChoice(choice);
             if(choice.equals("quit"))
                 finished = true;
+            else
+                executeMenuChoice(choice);
         }
     }
-    
+
     /**
      * choice method so we can execute the menu choice
      */
@@ -59,7 +61,7 @@ public class StockApp
     {
         if(choice.equals("add"))
         {
-           addProduct();
+            addProduct();
         }
         else if (choice.equals("remove"))
         {
@@ -69,42 +71,60 @@ public class StockApp
         {
             printAllProducts();
         }
+        else if (choice.equals("deliver"))
+        {
+            deliverProduct();
+        }
     }
-    
+
     public void addProduct()
     {
-       System.out.println("add a product");
-       System.out.println();
-       
-       System.out.println(" Enter the name of the product");
-       String name = input.getInput();
-       
-       Product product = new Product(nextID, name);
-       manager.addProduct(product);
-       
-       System.out.println("you have added this" + product);
-       nextID++;
+        System.out.println("add a product");
+        System.out.println();
+
+        System.out.println(" Enter the name of the product");
+        String name = input.getInput();
+
+        Product product = new Product(nextID, name);
+        manager.addProduct(product);
+
+        System.out.println("you have added this" + product);
+        nextID++;
     }
-    
+
     public void removeProduct()
     {
         System.out.println("Remove an old product");
         System.out.println();
-        
+
         System.out.println("Enter the id of the product");
         String number = input.getInput();
-        
+
         int id = Integer.parseInt(number);
         manager.removeProduct(id);
     }
-    
-    public void deliverProduct(int id, int amount)
+
+    public void deliverProduct()
     {
-        Product product = findProduct(id);
-        
-    
+        System.out.println("Deliver a quantity of product");
+        System.out.println();
+
+        System.out.println("Enter the ID of the product");
+        String number = input.getInput();
+
+        int id = Integer.parseInt(number);
+
+        System.out.println( "How much of the product would you like?");
+        String amount = input.getInput();
+
+        int amount1 = Integer.parseInt(amount);
+
+        manager.deliverProduct(id, amount1);
+
+        System.out.println("\nProduct Added : " + amount + " product in the stock" ); 
+        nextID++;
     }
-   
+
     /**
      * Print out a menu of operation choices
      */
@@ -115,14 +135,15 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
+        System.out.println("    Deliver:    Deliver the product");
         System.out.println();        
     }
-    
+
     public void printAllProducts()
     {
         manager.printAllProducts();
     }    
-    
+
     /**
      * Print the title of the program and the authors name
      */
